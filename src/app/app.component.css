@@ -1,0 +1,87 @@
+.topnav {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: -1199px;
+}
+.hero5{
+  padding-right: 1205px;
+  padding-top: 350px;
+  display: block;
+  margin: 0 auto;
+}
+#button1{
+  margin-left: 364px;
+  display: block;
+  margin: 0 auto;
+}
+a{
+  padding-right: 30px;
+  color: white;
+  cursor: pointer;
+}
+button{
+  margin-left: 900px;
+  height: 65px;
+  width: 160px;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+.topnav1 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  float: right;
+  margin-top: -105px;
+  margin-right: 150px;
+}
+input{
+  color: black;
+}
+img{
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+#plus{
+  height: 50px;
+  width: 85px;
+  margin-bottom: -3px;
+}
+
+#logIn{
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+#jumbotron1{
+  background-image: url(https://cdn.shopify.com/s/files/1/1623/5141/products/01_GoPro_Hero6Black_Buy_Carousel1_Desktop.jpg?v=1506844926);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+}
+#jumbotron2{
+  background-image: url(http://surfaceink.com/wp-content/uploads/2017/09/surfaceink-product-development-design-gopro-karma-controller-4-holding-controller-2-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1100px;
+  margin-top: -30px;
+}
+
+
+h2,h3,h4,h1{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding-bottom: -10px;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
