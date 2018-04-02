@@ -1,12 +1,15 @@
-<!-- <h1>DVD SHOP</h1>
+<h1>Hollywood Video</h1>
+<p> Here are some movies:</p>
+
 <ul>
-    <li ngFor="#movie of movieList" (click)="selectedMovie(movie)">{{movie}}</li>
+<li *ngFor="let movie of movieList" (click)="selectedMovie(movie)">{{movie}}</li>
 </ul>
+
 
 
 Recently Added Movie: {{recentMovie}}<br>
 
 Cart:
 <ul>
-    <li ngFor="#item of cart">{{item}}</li>
-</ul> -->
+    <li *ngFor="let item of cart">{{item}}</li>
+</ul>

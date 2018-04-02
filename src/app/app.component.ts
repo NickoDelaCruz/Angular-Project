@@ -1,32 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: `<h1>DVD SHOP</h1>
-  <p> Here are some movies:</p>
-
-  <ul>
-      <li ngFor="#movieList" (click)="selectedMovie(movie)">{{movie}}</li>
-  </ul>
-
-
-  Recently Added Movie: {{recentMovie}}<br>
-
-  Cart:
-  <ul>
-      <li ngFor="#item">{{item}}</li>
-  </ul>
-
-
-  `
-
-
+  selector: 'myStore',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   recentMovie = "None";
   public cart = [];
-  public movieList = ['Harry Potter', 'Harry PotterOMG', 'Harry PotterRETURN']
+  public movieList = ['Harry Potter', "Frank's Jokes"];
   selectedMovie(movie) {
-      alert(movie)
+    this.recentMovie = movie;
+    this.cart.push(movie);
+    alert(movie + "was added into the cart!");
   }
 }
