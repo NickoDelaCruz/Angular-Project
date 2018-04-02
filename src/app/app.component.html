@@ -2,7 +2,7 @@
 <p> Here are some movies:</p>
 
 <ul>
-<li *ngFor="let movie of movieList" (click)="selectedMovie(movie)">{{movie}}</li>
+  <li *ngFor="let movie of movieList" (click)="selectedMovie(movie)">{{movie}}</li>
 </ul>
 
 
@@ -11,5 +11,5 @@ Recently Added Movie: {{recentMovie}}<br>
 
 Cart:
 <ul>
-    <li *ngFor="let item of cart">{{item}}</li>
+  <li *ngFor="let item of cart">{{item}}</li>
 </ul>
