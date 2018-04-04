@@ -1,17 +1,17 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { CartComponent }   from './cart/cart.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent }   from './about/about.component';
 import { MarketplaceComponent }   from './marketplace/marketplace.component';
 
 const appRoutes: Routes = [
   {
      path: '',
-     component: AppComponent
+     component: WelcomeComponent
    },
   {
-    path: 'cart',
-    component: CartComponent
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'marketplace',

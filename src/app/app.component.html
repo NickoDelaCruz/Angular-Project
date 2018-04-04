@@ -1,27 +1,24 @@
-<h1>{{title}}</h1>
-<div class="container">
+<!--
+  <div class="container-fluid">
 
-
-  <h3>FEATURED :</h3>
-    <div id="myMovieList" class="clear">
-      <div *ngFor="let movie of featured" class="movieItem {{movie.split(' ').join('')}}" (click)="selectedMovie(movie)"><span class="movieName">{{movie}}</span></div>
+    <div class="navbar-header">
+      <a class="nav navbar-nav navbar-right" routerLink="">HOME</a>
     </div>
+      <div class="navbar-header">
+          <a class="nav navbar-right" routerLink="about">STORE</a>
+      </div> -->
 
 
-
-
-   <h3>ON SALE :</h3>
-      <div id="myMovieList" class="clear">
-        <div *ngFor="let movie of onsale" class="movieItem {{movie.split(' ').join('')}}" (click)="selectedMovie(movie)"><span class="movieName">{{movie}}</span></div>
-      </div>
-
-   <br>
-
-  <div id="cart">
-    <h3>Cart:</h3>
-      Recently Added: {{recentMovie}} <br>
-      <ul>
-        <li *ngFor="let movie of cart">{{movie}}</li>
-      </ul>
-  </div>
+  <div class="topnav" id="myTopnav">
+  <a routerLink="">HOME</a>
+  <a routerLink="about">STORE</a>
+  <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
 </div>
+
+
+  <!-- </div> -->
+
+
+
+  <h1>{{title}}</h1>
+  <router-outlet></router-outlet>

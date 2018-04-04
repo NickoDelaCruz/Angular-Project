@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { CartComponent } from './cart/cart.component';
+import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 
@@ -16,7 +16,7 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
   declarations: [
     AppComponent,
     WelcomeComponent,
-    CartComponent,
+    AboutComponent,
     MarketplaceComponent
   ],
   imports: [
