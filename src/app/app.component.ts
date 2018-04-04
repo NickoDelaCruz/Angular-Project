@@ -10,6 +10,7 @@ export class AppComponent {
   recentMovie = " ";
   public cart = [];
   public featured = ['Harry-Potter', "The-King-of-Codes"];
+  public onsale = ['Test', 'clap'];
   selectedMovie(movie) {
     this.recentMovie = movie;
     this.cart.push(movie);

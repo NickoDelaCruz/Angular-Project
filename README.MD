@@ -23,7 +23,7 @@ To install dependencies:
 
 To run program and open in browser:
 
-`$ npm run start`
+`$ ng serve`
 
 
 
@@ -42,6 +42,8 @@ User's can view/buy movies
 ## Known Bugs
 
 (Not even done)
+
+Movie Names can't have spaces since they are counted as classes in a array
 
 ## License
 
