@@ -1,15 +1,15 @@
 <h1>{{title}}</h1>
 <div class="container">
-  <h3>Movies for :</h3>
+  <h3>FEATURED: </h3>
     <div id="myMovieList" class="clear">
-      <div *ngFor="let movie of movieList" class="movieItem {{movie.split(' ').join('')}}" (click)="selectedMovie(movie)"><span class="movieName">{{movie}}</span></div>
-    </div>
-   <!-- Recently Added: {{recentMovie}} <br> -->
+      <div *ngFor="let movie of featured" class="movieItem {{movie.split(' ').join('')}}" (click)="selectedMovie(movie)"><span class="movieName">{{movie}}</span></div>
+    </div><br>
 
-   <br>
+    <h3>HOT </h3>
 
   <div id="cart">
     <h3>Cart:</h3>
+      Recently Added: {{recentMovie}} <br>
       <ul>
         <li *ngFor="let item of cart">{{item}}</li>
       </ul>
