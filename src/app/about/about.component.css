@@ -29,7 +29,7 @@ h3 {
 
 .movieItem {
   font-size: 20px;
-  width: 35%;
+  width: 33%;
   float: left;
   text-align: center;
   cursor: pointer;
@@ -75,5 +75,5 @@ h3 {
 }
 
 .Hannah-Montana {
-  background: url('http://www.impawards.com/2009/posters/hannah_montana_the_movie.jpg');
+  background: url('https://i.imgur.com/ytcV0UE.jpg') no-repeat;
 }

@@ -18,7 +18,8 @@
 
   <div id="cart">
     <h3>Cart:</h3>
-      Recently Added: {{recentMovie}} <br>
+      <input type="button" value="REMOVE ALL" onClick="window.location.reload()">
+        <h2>Recently Added: {{recentMovie}}</h2>
       <ul>
         <li *ngFor="let movie of cart">{{movie}}</li>
       </ul>
