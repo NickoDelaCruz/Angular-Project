@@ -1,28 +1,19 @@
-<h1 >
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
 
 <div class="container">
 
-<h3>Here are some movies:</h3>
+  <h3>Here are some movies:</h3>
+  <div id="myMovieList">
+    <div *ngFor="let movie of movieList" class="movieItem" (click)="selectedMovie(movie)">{{movie}}</div>
+  </div>
 
 
-
-<div id="myMovieList">
-
-  <div *ngFor="let movie of movieList" class="movieItem" (click)="selectedMovie(movie)">{{movie}}</div>
-
-</div>
+  <h3> Cart: </h3>
+   Recently Added: {{recentMovie}} <br>
 
 
-
-Recently Added: {{recentMovie}}<br>
-
-<h3>Shopping Cart: </h3>
-
-
-<ul>
-  <li *ngFor="let item of cart">{{item}}</li>
-</ul>
+  <ul>
+    <li *ngFor="let item of cart">{{item}}</li>
+  </ul>
 
 </div>

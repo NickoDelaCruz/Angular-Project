@@ -5,8 +5,30 @@ h1 {
   background: #1C1C1C;
   color: white;
   text shadow: 0 0 11px white;
+  font-weight: bold
 }
 
-li {
-  font-size: 30px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: block;
+}
+
+h3 {
+  font-weight: bold
+}
+
+.movieItem {
+  font-size: 50px;
+
+}
+
+
+.container {
+  width: 960px;
+  margin: 0 auto;
 }
