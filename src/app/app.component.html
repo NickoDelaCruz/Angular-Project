@@ -1,11 +1,4 @@
 <h1>{{title}}</h1>
-
-
-<ul class="nav navbar-nav navbar-right">
-  <li><a routerLink="about">About</a></li>
-  <li><a routerLink="cart">cart</a></li>
-</ul>
-
 <div class="container">
 
 
@@ -26,11 +19,9 @@
 
   <div id="cart">
     <h3>Cart:</h3>
-
+      Recently Added: {{recentMovie}} <br>
       <ul>
         <li *ngFor="let movie of cart">{{movie}}</li>
-        <input type="button" value="REMOVE ALL" onClick="window.location.reload()">
       </ul>
   </div>
-
 </div>
