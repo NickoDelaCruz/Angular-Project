@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
 <div class="container">
-  <h3>Here are some movies:</h3>
+  <h3>Movies for sale:</h3>
     <div id="myMovieList" class="clear">
       <div *ngFor="let movie of movieList" class="movieItem {{movie.split(' ').join('')}}" (click)="selectedMovie(movie)">{{movie}}</div>
     </div>

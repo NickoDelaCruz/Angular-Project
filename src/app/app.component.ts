@@ -9,7 +9,7 @@ export class AppComponent {
   title = "Hollywood Video";
   recentMovie = " ";
   public cart = [];
-  public movieList = ['HarryPotter', "Frank's Jokes"];
+  public movieList = ['HarryPotter', "FranksJokes"];
   selectedMovie(movie) {
     this.recentMovie = movie;
     this.cart.push(movie);
