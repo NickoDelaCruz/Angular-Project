@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  recentMovie = "None";
+  recentMovie = " ";
   public cart = [];
   public movieList = ['Harry Potter', "Frank's Jokes"];
   selectedMovie(movie) {
     this.recentMovie = movie;
     this.cart.push(movie);
-    alert(movie + "was added into the cart!");
+    alert(movie + " was added into the cart!");
   }
 }
