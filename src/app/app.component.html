@@ -1,4 +1,5 @@
 <h1>{{title}}</h1>
+
 <div class="container">
 
 
@@ -19,9 +20,10 @@
 
   <div id="cart">
     <h3>Cart:</h3>
-      Recently Added: {{recentMovie}} <br>
+
       <ul>
         <li *ngFor="let movie of cart">{{movie}}</li>
+        <input type="button" value="REMOVE ALL" onClick="window.location.reload()">
       </ul>
   </div>
 </div>
