@@ -33,23 +33,27 @@ h3 {
 }
 
 .movieItem {
-  font-size: 30px;
-  width: 33%;
+  font-size: 20px;
+  width: 35%;
   float: left;
   text-align: center;
   cursor: pointer;
   height: 400px;
+  margin: 5px;
   background-size: auto 100% !important;
   position: relative;
 
 }
 
-.movieName {
+.movieName  {
   position: absolute;
-  bottom:0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.76);
   text-align: center;
+  color: white;
+  padding: 10px 0;
 }
 
 
@@ -63,5 +67,5 @@ h3 {
 }
 
 .HarryPotter {
-  background: url('https://vignette.wikia.nocookie.net/harrypotter/images/6/64/Harry-Potter-and-the-Sorcerers-Stone-2001-Hindi-Dubbed-Movie-Watch-Online.jpg/revision/latest?cb=20130803161550') no-repeat;
+  background: url('https://vignette.wikia.nocookie.net/harrypotter/images/6/64/Harry-Potter-and-the-Sorcerers-Stone-2001-Hindi-Dubbed-Movie-Watch-Online.jpg/revision/latest?cb=20130803161550');
 }
