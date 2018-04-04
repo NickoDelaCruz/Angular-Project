@@ -2,7 +2,7 @@
 <div class="container" class="clear">
   <h3>Here are some movies:</h3>
     <div id="myMovieList">
-      <div *ngFor="let movie of movieList" class="movieItem" (click)="selectedMovie(movie)">{{movie}}</div>
+      <div *ngFor="let movie of movieList" class="movieItem {{movie}}" (click)="selectedMovie(movie)">{{movie}}</div>
     </div>
    <!-- Recently Added: {{recentMovie}} <br> -->
 
