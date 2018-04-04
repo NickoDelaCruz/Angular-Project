@@ -2,17 +2,27 @@
   {{title}}
 </h1>
 
-<h3> Here are some movies:</h3>
+<div class="container">
 
-<ul>
-  <li *ngFor="let movie of movieList" (click)="selectedMovie(movie)">{{movie}}</li>
-</ul>
+<h3>Here are some movies:</h3>
+
+
+
+<div id="myMovieList">
+
+  <div *ngFor="let movie of movieList" class="movieItem" (click)="selectedMovie(movie)">{{movie}}</div>
+
+</div>
 
 
 
 Recently Added: {{recentMovie}}<br>
 
-Shopping Cart:
+<h3>Shopping Cart: </h3>
+
+
 <ul>
   <li *ngFor="let item of cart">{{item}}</li>
 </ul>
+
+</div>
