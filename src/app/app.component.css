@@ -25,11 +25,19 @@ h3 {
   border-bottom: 1px solid black;
 }
 
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
 .movieItem {
   font-size: 30px;
   width: 33%;
   float: left;
   text-align: center;
+  cursor: pointer;
 
 }
 
