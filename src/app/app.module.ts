@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent } from './about/about.component';
+import { MovieComponent } from './movie/movie.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 
@@ -16,7 +16,7 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
   declarations: [
     AppComponent,
     WelcomeComponent,
-    AboutComponent,
+    MovieComponent,
     MarketplaceComponent
   ],
   imports: [

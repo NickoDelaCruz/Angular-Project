@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-movie',
+  templateUrl: './movie.component.html',
+  styleUrls: ['./movie.component.css']
 })
-export class AboutComponent {
+export class MovieComponent {
   title = "Hollywood Video";
   recentMovie = " ";
   public cart = [];
   public featured = ['Harry-Potter', "The-King-of-Codes", 'Hannah-Montana', 'Deadpool', 'BrideToTerabithia', 'IndianaJones' ];
-  public onsale = ['Test', 'clap'];
+  public onsale = ['Jurrasic-Park', 'LearnHowToClap', 'Tron'];
+  public under10 = ['Test'];
   selectedMovie(movie) {
     this.recentMovie = movie;
     this.cart.push(movie);
