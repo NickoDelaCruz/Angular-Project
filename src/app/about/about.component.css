@@ -29,7 +29,7 @@ h3 {
 
 .movieItem {
   font-size: 20px;
-  width: 33%;
+  width: 32%;
   float: left;
   text-align: center;
   cursor: pointer;
@@ -76,4 +76,16 @@ h3 {
 
 .Hannah-Montana {
   background: url('https://i.imgur.com/ytcV0UE.jpg') no-repeat;
+}
+
+.Deadpool {
+  background: url('https://i.imgur.com/z5W1haM.png?1');
+}
+
+.BrideToTerabithia {
+  background: url('https://i.imgur.com/e2vTyGY.jpg');
+}
+
+.IndianaJones {
+  background: url("https://i.imgur.com/28PaivW.jpg")
 }
