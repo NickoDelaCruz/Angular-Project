@@ -9,7 +9,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MovieComponent } from './movie/movie.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { ContactComponent } from './contact/contact.component';
+import { GamecrazyComponent } from './gamecrazy/gamecrazy.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
     AppComponent,
     WelcomeComponent,
     MovieComponent,
-    MarketplaceComponent
+    ContactComponent,
+    GamecrazyComponent
   ],
   imports: [
     BrowserModule,
