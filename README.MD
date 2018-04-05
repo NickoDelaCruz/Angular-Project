@@ -1,52 +1,108 @@
-####  NOT DONE
+# Hollywood Video resurrection
+
+Revamping a dead company's website, allowing users to view and purchase DVDs.
+
+Since hollywood video doesn't have a site anymore, i'm going by memory, or until I find a cached ver.
+
+However
+http://www.blockbuster.com/ is still active so I will lean towards that design as a last resort.
+
+
+## Prerequisites
+
+You need node to run my site
+
+```
+Node: https://nodejs.org/en/
+```
+
+### Installation
+
+First (1/3)
+
+```
+Open Terminal
+```
+
+Second (2/3)
+
+```
+$ git clone https://github.com/NickoDelaCruz/HollywoodVideo.git
+```
+
+Third (3/3)
+
+```
+npm install
+```
+
+To deploy server run:
+
+```
+ng serve
+```
 
 
 
 
-# Holywood Video/ Game Crazy
+## Build and Running Test
+To Build:
+```
+ng build
+```
 
-#### Angular - Two Week Project
-
-#### Nicko Dela Cruz
-
-## Description
-
-Revamping Hollywood Video
-
-## Setup
-
-Clone this repository and navigate to root directory.
-
-To install dependencies:
-
-`$ npm install`  
-
-To run program and open in browser:
-
-`$ ng serve`
+To run test via Karma
+```
+ng build
+```
 
 
+### Current features (User Stories Day 1)
 
-## Functionality
+* As a ADMIN I want to be able to add/remove movies
 
-User's can view/buy movies
-(imrpove)
+* As a USER I want to be able to navigate throughout the sites nav bar
 
-## Technologies Used
+* As a USER I want to view DVDs for sale
 
-* JavaScript
-* JQuery
-* HTML
-* Webpack
+* As a USER I want to different categories of DVDs
 
-## Known Bugs
+* As a USER I want to be able to purchase DVDs
 
-(Not even done)
+* As a USER I want to be able to view my shopping cart
 
-Movie Names can't have spaces since they are counted as classes in a array
+* As a USER I want to be able edit my shopping cart (not yet individually, can clear cart)
+
+* As a USER I want to view the store and game sections (Almost done, need more routing)
+
+
+
+### Future Features (Day 2)
+
+* Implement Firebase with movies and games
+
+* A separate page for shopping cart (user marketplace ref)
+
+* The game crazy side of hollywood video that sells games, consoles, and music
+
+* Login system (User Authentication)
+
+* Let admin add movies
+
+
+## Built With
+
+* [Atom](https://atom.io/) - Text editor
+* [cmder](http://cmder.net/) - Windows terminal
+* [npm](https://nodejs.org/en/) - Used to install angular
+
+
+## Authors
+
+* **Nicko Dela Cruz**  [Epicodus Github](https://github.com/NickoDelaCruz)
+
+
 
 ## License
 
 OS
-
-Copyright (c) 2018 NickoDC
