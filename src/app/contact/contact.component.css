@@ -1,4 +1,20 @@
-address { 
-    display: block;
-    font-style: italic;
+#contact {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 2px solid #eee;
+  background: #1C1C1C;
+  color: white;
+  text shadow: 0 0 11px white;
+  font-weight: bold
+}
+
+h3 {
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
