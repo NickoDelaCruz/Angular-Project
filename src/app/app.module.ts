@@ -25,15 +25,9 @@ import { PropertyDetailComponent } from './components/game-detail/game-detail.co
 import { RemoveListingsComponent } from './components/remove-game/remove-listing.component';
 
 
-
-
-
-
-
 //Extra Pages
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { GamecrazyComponent } from './components/gamecrazy/gamecrazy.component';
 import { CartComponent } from './components/cart/cart.component';
 
 
@@ -53,8 +47,11 @@ import { CartComponent } from './components/cart/cart.component';
     WelcomeComponent,
     MovieComponent,
     ContactComponent,
-    GamecrazyComponent,
-    CartComponent
+    CartComponent,
+    AddListingComponent,
+    ListingsComponent,
+    PropertyDetailComponent,
+    RemoveListingsComponent
   ],
   imports: [
     BrowserModule,
