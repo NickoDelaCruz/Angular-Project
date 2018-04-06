@@ -7,10 +7,10 @@ import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { MovieComponent } from './movie/movie.component';
-import { ContactComponent } from './contact/contact.component';
-import { GamecrazyComponent } from './gamecrazy/gamecrazy.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { GamecrazyComponent } from './components/gamecrazy/gamecrazy.component';
 
 
 @NgModule({
