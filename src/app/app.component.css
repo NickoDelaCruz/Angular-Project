@@ -1,146 +1,29 @@
-/* h1 {
-  text-align: center;
-  padding: 40px 0;
-  border-bottom: 2px solid #eee;
-  background: #1C1C1C;
-  color: white;
-  text shadow: 0 0 11px white;
-  font-weight: bold
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-body {
-  display: block;
-}
-
-h3 {
-  font-weight: bold;
-  padding-top: 24px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
-}
-
-.clear:after {
-  content: '';
-  display: block;
-  clear: both;
-
-}
-
-.movieItem {
-  font-size: 20px;
-  width: 35%;
-  float: left;
-  text-align: center;
-  cursor: pointer;
-  height: 400px;
-  margin: 5px;
-  background-size: auto 100% !important;
-  position: relative;
-
-}
-
-.movieName  {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.76);
-  text-align: center;
-  color: white;
-  padding: 10px 0;
-}
-
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.The-King-of-Codes {
-  background: url('https://i.imgur.com/yGSYvOa.jpg');
-}
-
-.Harry-Potter {
-  background: url('https://i.imgur.com/a44Bh8r.jpg');
-}
-
-.Test {
-  background: url('https://i.imgur.com/DvgrUEl.jpg');
-}
-
-.clap {
-  background: url('https://i.imgur.com/ccM432C.jpg');
-}
-
-.Hannah-Montana {
-  background: url('http://www.impawards.com/2009/posters/hannah_montana_the_movie.jpg');
-} */
-
-
-/* .topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-} */
-
-
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
 
-div.container
+div
 {
-    font-family: Raleway;
-    margin: 0 auto;
-	padding: 10em 3em;
+  font-family: Raleway;
+  padding: 40px 16px;
 	text-align: center;
 }
 
-div.container a
+div a
 {
-    color: #FFF;
+    color: lightgreen;
     text-decoration: none;
     font: 20px Raleway;
-    margin: 0px 10px;
+    margin: 10px 10px;
     padding: 10px 10px;
     position: relative;
     cursor: pointer;
 }
-.teal
+.black
 {
-    background: #009688;
+    background: black;
 }
 
-/* Border from Y to X  */
-div.borderYtoX a:before, div.borderYtoX a:after
+div.animation a:before, div.animation a:after
 {
     position: absolute;
     opacity: 0.5;
@@ -151,19 +34,19 @@ div.borderYtoX a:before, div.borderYtoX a:after
     transition: all 0.3s;
 }
 
-div.borderYtoX a:before
+div.animation a:before
 {
     left: 0px;
     top: 0px;
 }
 
-div.borderYtoX a:after
+div.animation a:after
 {
     right: 0px;
     bottom: 0px;
 }
 
-div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+div.animation a:hover:before, div.animation a:hover:after
 {
     opacity: 1;
     height: 2px;
