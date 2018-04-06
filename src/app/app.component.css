@@ -57,3 +57,36 @@ div.animation a:hover:before, div.animation a:hover:after
     height: 2px;
     width: 100%;
 }
+
+/*
+footer  */
+
+footer {
+  marigin-top: -100%;
+  width: 100%;
+  background-color: black;
+  padding: 60px 0px;
+}
+
+footer nav {
+  float: right;
+}
+
+footer nav ul {
+  margin-top: 73px;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:-100%;
+   background:#999;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
