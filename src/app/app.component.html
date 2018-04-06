@@ -1,24 +1,16 @@
-<!--
-  <div class="container-fluid">
-
-    <div class="navbar-header">
-      <a class="nav navbar-nav navbar-right" routerLink="">HOME</a>
-    </div>
-      <div class="navbar-header">
-          <a class="nav navbar-right" routerLink="about">STORE</a>
-      </div> -->
-
-      <!-- <a class="nav navbar-nav navbar-right" routerLink="">HOME</a> -->
-
- <div class="topnav black animation">
+<div class="topnav black animation">
+  <div id="title">
+     <h1>{{title}}</h1>
+  </div>
     <a routerLink="">Home</a>
     <a routerLink="movie">Store</a>
     <a routerLink="contact">Contact</a>
     <a routerLink="gamecrazy">Game Crazy</a>
     <a routerLink="cart">Cart</a>
 </div>
-
-
-
-  <!-- <h1>{{title}}</h1> -->
   <router-outlet></router-outlet>
+<!-- <div class="topnav black animation">
+   <a routerLink="">Movies</a>
+   <a routerLink="movie">Games</a>
+   <a routerLink="contact">Sell</a>
+</div> -->

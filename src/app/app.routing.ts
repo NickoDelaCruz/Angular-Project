@@ -6,6 +6,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MovieComponent }   from './components/movie/movie.component';
 import { ContactComponent }   from './components/contact/contact.component';
 import { GamecrazyComponent }   from './components/gamecrazy/gamecrazy.component';
+import { CartComponent }   from './components/cart/cart.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +25,10 @@ const appRoutes: Routes = [
   {
     path: 'gamecrazy',
     component: GamecrazyComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
   }
 
  ];

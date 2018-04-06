@@ -1,10 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
 
+h1 {
+ color: lightgreen;
+}
+
+
 div
 {
   font-family: Raleway;
-  padding: 40px 16px;
+  padding: 75px 16px;
 	text-align: center;
 }
 

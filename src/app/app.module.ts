@@ -11,6 +11,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GamecrazyComponent } from './components/gamecrazy/gamecrazy.component';
+import { CartComponent } from './components/cart/cart.component';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { GamecrazyComponent } from './components/gamecrazy/gamecrazy.component';
     WelcomeComponent,
     MovieComponent,
     ContactComponent,
-    GamecrazyComponent
+    GamecrazyComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
