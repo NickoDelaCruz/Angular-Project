@@ -1,0 +1,14 @@
+  <h1>Add a game</h1>
+  <form>
+    <label for="Owner">Owner Name : </label>
+      <input type="text"  name="Owner" #owner>
+		<label for="Title">Title : </label>
+			<input type="text" name="Title" #title>
+	  <label for="Price">Price : </label>
+	      <input type="text" name="Price" #price>
+    <label for="System">System : </label>
+	      <input type="text" name="System" #system>
+    <label for="Description">Description : </label>
+				<input type="text" id="desc" name="Description" placeholder='Describe what your selling (Imgur links are accepted)' #description>
+        <button type="button" class="btn btn-danger ml-2" name="Close" (click)="toggleDisplay()">Cancel</button>
+  </form>
