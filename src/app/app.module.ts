@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 //firebase modules
-// import { AngularFireModule } from 'angularfire2';
-// import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 // Hollywoodvideo
@@ -18,29 +18,27 @@ import { MovieComponent } from './components/movie/movie.component';
 
 
 // Game Crazy
-// import { PropertyDetailComponent } from './components/game-detail/game-detail.component';
-// import { AddListingComponent } from './components/add-game/add-game.component';
-import { GameListComponent } from './components/gameList/gameList.component';
-// import { RemoveGameComponent } from './components/remove-game/remove-game.component';
+import { GameDetailComponent } from './components/game-detail/game-detail.component';
+import { AddGameComponent } from './components/add-game/add-game.component';
+import { GameListComponent } from './components/game-list/game-list.component';
+import { RemoveGameComponent } from './components/remove-game/remove-game.component';
 
 
 
 //Extra Pages
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { CartComponent } from './components/cart/cart.component';
 
 //key
-// import { masterFirebaseConfig } from './api-keys';
+import { firebaseApiKey } from './api-keys';
 
 //Configure firebase
-// export const firebaseConfig = {
-//   apiKey: firebaseApiKey.apiKey,
-//   authDomain: firebaseApiKey.authDomain,
-//   databaseURL: firebaseApiKey.databaseURL,
-//   storageBucket: firebaseApiKey.storageBucket
-// }
-
+export const firebaseConfig = {
+  apiKey: firebaseApiKey.apiKey,
+  authDomain: firebaseApiKey.authDomain,
+  databaseURL: firebaseApiKey.databaseURL,
+  storageBucket: firebaseApiKey.storageBucket
+}
 
 @NgModule({
   declarations: [
@@ -48,21 +46,18 @@ import { CartComponent } from './components/cart/cart.component';
     WelcomeComponent,
     MovieComponent,
     ContactComponent,
-    CartComponent,
-    GameListComponent
-    // PropertyDetailComponent,
-    // RemoveListingsComponent
-    // ListingsComponent,
-    // AddListingComponent,
-    // PropertyDetailComponent
+    GameListComponent,
+    RemoveGameComponent,
+    AddGameComponent,
+    GameDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
-    // AngularFireModule.initializeApp(firebaseConfig),
-    // AngularFireDatabaseModule
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

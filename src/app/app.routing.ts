@@ -1,13 +1,14 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
+// Hollywood (Movies)
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MovieComponent }   from './components/movie/movie.component';
 import { ContactComponent }   from './components/contact/contact.component';
-import { CartComponent }   from './components/cart/cart.component';
 
-import { GameListComponent } from './components/gameList/gameList.component';
+// Game Crazy (Games)
+// import { GameListComponent } from './components/game-list/game-list.component';
+// import { GameDetailComponent } from './components/game-detail/game-detail.component';
 
 
 const appRoutes: Routes = [
@@ -23,10 +24,14 @@ const appRoutes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
-  {
-    path: 'game',
-    component: GameListComponent
-  }
+  // {
+  //   path: 'games',
+  //   component: GameListComponent
+  // },
+  // {
+  //   path: 'games/:id',
+  //   component: GameDetailComponent
+  // }
   // {
   //   path: '',
   //   component: Component
