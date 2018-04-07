@@ -29,7 +29,5 @@ export class AddGameComponent implements OnInit {
     this.gameService.addGame(newGame);
     this.toggleDisplay();
   }
-
-
-
+  
 }
