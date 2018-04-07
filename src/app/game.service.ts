@@ -12,5 +12,10 @@ export class GameService {
     this.games = database.list('games');
   }
 
+  getGames() {
+  return this.games;
+}
+
+
 
 }
