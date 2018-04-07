@@ -5,5 +5,5 @@ export class Agame {
     public price: string,
     public system: string,
     public description: string
-  ) { }
+  ){}
 }

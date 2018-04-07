@@ -20,6 +20,10 @@ export class GameService {
     this.games.push(newGame);
   }
 
+  getGameByKey(gameId: string) {
+  return this.database.object('games/' + gameId);
+  }
+
 
 
 }

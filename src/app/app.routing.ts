@@ -7,8 +7,8 @@ import { MovieComponent }   from './components/movie/movie.component';
 import { ContactComponent }   from './components/contact/contact.component';
 
 // Game Crazy (Games)
-// import { GameListComponent } from './components/game-list/game-list.component';
-// import { GameDetailComponent } from './components/game-detail/game-detail.component';
+import { GameListComponent } from './components/game-list/game-list.component';
+import { GameDetailComponent } from './components/game-detail/game-detail.component';
 
 
 const appRoutes: Routes = [
@@ -24,14 +24,14 @@ const appRoutes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
-  // {
-  //   path: 'games',
-  //   component: GameListComponent
-  // },
-  // {
-  //   path: 'games/:id',
-  //   component: GameDetailComponent
-  // }
+  {
+    path: 'games',
+    component: GameListComponent
+  },
+  {
+    path: 'games/:id',
+    component: GameDetailComponent
+  }
   // {
   //   path: '',
   //   component: Component
