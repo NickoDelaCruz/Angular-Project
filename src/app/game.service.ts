@@ -12,20 +12,5 @@ export class GameService {
     this.games = database.list('games');
   }
 
-  getProperties() {
-    return this.games;
-  }
-
-  addProperty(newGame: Agame) {
-    this.games.push(newGame);
-  }
-
-  getPropertyByKey(gameId: string) {
-    return this.database.object('games/' + gameId);
-  }
-
-  removeListing(gameId) {
-    this.database.object(`/games/${gameId}`).remove();
-  }
 
 }
