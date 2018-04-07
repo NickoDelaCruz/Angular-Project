@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddGameComponent implements OnInit {
 
+    toggle: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
