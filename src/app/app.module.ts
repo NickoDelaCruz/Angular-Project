@@ -20,9 +20,8 @@ import { MovieComponent } from './components/movie/movie.component';
 // Game Crazy
 // import { PropertyDetailComponent } from './components/game-detail/game-detail.component';
 // import { AddListingComponent } from './components/add-game/add-game.component';
-// import { ListingsComponent } from './components/gameList/gameList.component';
-// import { RemoveListingsComponent } from './components/remove-game/remove-listing.component';
-//
+import { GameListComponent } from './components/gameList/gameList.component';
+// import { RemoveGameComponent } from './components/remove-game/remove-game.component';
 
 
 
@@ -49,7 +48,8 @@ import { CartComponent } from './components/cart/cart.component';
     WelcomeComponent,
     MovieComponent,
     ContactComponent,
-    CartComponent
+    CartComponent,
+    GameListComponent
     // PropertyDetailComponent,
     // RemoveListingsComponent
     // ListingsComponent,

@@ -1,11 +1,11 @@
 // import { Component, OnInit } from '@angular/core';
 //
 // @Component({
-//   selector: 'app-property-detail',
-//   templateUrl: './property-detail.component.html',
-//   styleUrls: ['./property-detail.component.css']
+//   selector: 'app-game-detail',
+//   templateUrl: './game-detail.component.html',
+//   styleUrls: ['./game-detail.component.css']
 // })
-// export class PropertyDetailComponent implements OnInit {
+// export class GameDetailComponent implements OnInit {
 //
 //   constructor() { }
 //
