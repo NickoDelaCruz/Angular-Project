@@ -14,7 +14,11 @@ export class GameService {
 
   getGames() {
   return this.games;
-}
+  }
+
+  addGame(newGame: Agame) {
+    this.games.push(newGame);
+  }
 
 
 
