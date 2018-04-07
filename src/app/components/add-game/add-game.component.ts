@@ -3,16 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 import { Agame } from '../../game.model';
 
-
 @Component({
   selector: 'app-add-game',
   templateUrl: './add-game.component.html',
-  styleUrls: ['./add-game.component.css']
+  styleUrls: ['./add-game.component.css'],
+  providers: [GameService]
 })
-
 export class AddGameComponent implements OnInit {
 
-    toggle: boolean = false;
+  toggle: boolean = false;
 
   constructor(private gameService: GameService) { }
 
@@ -29,5 +28,5 @@ export class AddGameComponent implements OnInit {
     this.gameService.addGame(newGame);
     this.toggleDisplay();
   }
-  
+
 }

@@ -1,2 +1,20 @@
 <h1>Games up for sale: </h1>
+
+<div class="container">
+  <div *ngFor="let game of games | async">
+      <h4>Owner: {{game.owner}}</h4>
+      <div class="card-body bg-light">
+<br>
+        <p class="card-text">Title: {{game.title}}</p>
+<br>
+        <p class="card-text">Price: ${{game.price}}</p>
+<br>
+        <p class="card-text">System: {{game.system}}</p>
+<br>
+        <!-- <app-remove-game [gameKey]="game"></app-remove-game> -->
+
+        <button type="button" class="btn btn-success" name="button" (click)="details(game)">More Details</button>
+      </div>
+  </div>
+</div>
 <app-add-game></app-add-game>
