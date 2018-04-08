@@ -4,6 +4,11 @@ Made Hollywood Video a website for FREE!
 
 Live demo: https://epicodus-199501.firebaseapp.com/
 
+![alt tag](https://i.gyazo.com/ad875e5736aed23c2895273765ece59e.jpg)
+
+![alt tag](https://i.gyazo.com/8d1f4d90aba37d0a3f43e672bccfb888.png)
+
+
 ## Prerequisites
 
 You need node to run my site
