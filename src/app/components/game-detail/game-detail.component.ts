@@ -14,7 +14,7 @@ export class GameDetailComponent implements OnInit {
   gameKey: string;
   gameDetail;
 
-  constructor(private route: ActivatedRoute, private gameService: GameService) { }
+  constructor(private route: ActivatedRoute, private location: Location, private gameService: GameService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters)=> {
