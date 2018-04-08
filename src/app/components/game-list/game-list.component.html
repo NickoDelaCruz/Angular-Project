@@ -2,17 +2,15 @@
 
 <div class="container">
   <div *ngFor="let game of games | async">
-      <h4>Owner: {{game.owner}}</h4>
+      <h1><strong>Owner: </strong> {{game.owner}}</h1>
       <div class="card-body bg-light">
 <br>
-        <p class="card-text">Title: {{game.title}}</p>
+        <h2 class="card-text"><strong>Title:</strong> {{game.title}}</h2>
 <br>
-        <p class="card-text">Price: ${{game.price}}</p>
+        <h3 class="card-text">Price: ${{game.price}}</h3>
 <br>
-        <p class="card-text">System: {{game.system}}</p>
+        <h3 class="card-text">System: {{game.system}}</h3>
 <br>
-        <!-- <app-remove-game [gameKey]="game"></app-remove-game> -->
-
         <button type="button" class="btn btn-success" name="button" (click)="details(game)">More Details</button>
       </div>
   </div>
