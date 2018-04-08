@@ -5,11 +5,11 @@
       <h1><strong>Owner: </strong> {{game.owner}}</h1>
       <div class="card-body bg-light">
 <br>
-        <h2><strong>Title:</strong> {{game.title}}</h2>
+        <h2>Title: <strong>{{game.title}}</strong></h2>
 <br>
-        <h3>Price: ${{game.price}}</h3>
+        <h2>Price: <strong>${{game.price}}</strong></h2>
 <br>
-        <h3>System: {{game.system}}</h3>
+        <h2>System: <strong>{{game.system}}</strong></h2>
 <br>
         <button type="button" class="btn btn-success" name="button" (click)="details(game)">More Details</button>
       </div>
