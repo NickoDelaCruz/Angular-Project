@@ -10,6 +10,8 @@ import { ContactComponent }   from './components/contact/contact.component';
 import { GameListComponent } from './components/game-list/game-list.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
 
+//Admin
+import { AdminComponent } from './components/admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -29,13 +31,14 @@ const appRoutes: Routes = [
     component: GameListComponent
   },
   {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
     path: 'games/:id',
     component: GameDetailComponent
   }
-  // {
-  //   path: '',
-  //   component: Component
-  // },
+
   // {
   //   path: '',
   //   component: Component

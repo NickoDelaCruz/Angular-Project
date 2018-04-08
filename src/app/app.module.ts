@@ -23,7 +23,8 @@ import { AddGameComponent } from './components/add-game/add-game.component';
 import { GameListComponent } from './components/game-list/game-list.component';
 import { RemoveGameComponent } from './components/remove-game/remove-game.component';
 
-
+//Admin
+import { AdminComponent } from './components/admin/admin.component';
 
 //Extra Pages
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -49,7 +50,8 @@ export const firebaseConfig = {
     GameListComponent,
     RemoveGameComponent,
     AddGameComponent,
-    GameDetailComponent
+    GameDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
