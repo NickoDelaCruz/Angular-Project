@@ -11,6 +11,8 @@
 <br>
         <h2>System: <strong>{{game.system}}</strong></h2>
 <br>
+        <app-remove-game [gameKey]="game"></app-remove-game>
+
         <button type="button" class="btn btn-success" name="button" (click)="details(game)">More Details</button>
       </div>
   </div>

@@ -24,6 +24,10 @@ export class GameService {
   return this.database.object('games/' + gameId);
   }
 
+  removeGame(gameId) {
+  this.database.object(`/games/${gameId}`).remove();
+}
+
 
 
 }
