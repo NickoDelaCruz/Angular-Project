@@ -44,4 +44,4 @@ Thumbs.db
 
 
 #FFIREBASE
-api-keys.ts
+/src/app/api-keys.ts
