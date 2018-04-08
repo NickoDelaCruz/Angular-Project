@@ -2,7 +2,7 @@
 
 Made Hollywood Video a website for FREE!
 
-Live demo:
+Live demo: https://epicodus-199501.firebaseapp.com/
 
 ## Prerequisites
 
@@ -13,33 +13,53 @@ Node: https://nodejs.org/en/
 ```
 
 ### Installation
-
-First
-
 ```
 Open Terminal
 ```
-
-Second
-
 ```
 $ git clone https://github.com/NickoDelaCruz/HollywoodVideo.git
 ```
-
-Third
-
 ```
-npm install
+Navigate to Hollywoodvideo
 ```
-
-To deploy server run:
-
 ```
-ng serve
+$ npm install -g @angular/cli
+```
+```
+$ npm install
 ```
 
 
-## Build and Running Test
+### Firebase Installation
+
+Create api-keys.ts in the app dir
+
+run:
+
+```
+$ touch src/app/api-keys.ts
+```
+
+Add this into api-keys.ts with your own Api information
+
+```
+export const firebaseApiKey = {
+    apiKey: "",
+     authDomain: "",
+     databaseURL: "",
+     projectId: "",
+     storageBucket: "",
+     messagingSenderId: ""
+}
+```
+To run:
+
+```
+ng serve --open
+```
+
+
+## Build and Test
 To Build:
 ```
 ng build
@@ -51,38 +71,35 @@ ng build
 ```
 
 
-### Current features (User Stories Day 1)
+### Current Features (Day 1 and 2)
 
-* As a ADMIN I want to be able to add/remove movies
+* Firebase database
 
-* As a USER I want to be able to navigate throughout the sites nav bar
+* Deployed Firebase
 
-* As a USER I want to view DVDs for sale
+* Routing
 
-* As a USER I want to different categories of DVDs
+* Dynamic Routing
 
-* As a USER I want to be able to purchase DVDs
+* Deployed Firebase
 
-* As a USER I want to be able to view my shopping cart
-
-* As a USER I want to be able edit my shopping cart (not yet individually, can clear cart)
-
-* As a USER I want to view the store and game sections (Almost done, need more routing)
+* Admin can delete games
 
 
+### Future Features
 
-### Future Features (Day 2)
-
-* Implement Firebase with movies and games
-
-* A separate page for shopping cart (user marketplace ref)
-
-* The game crazy side of hollywood video that sells games, consoles, and music
 
 * Login system (User Authentication)
 
-* Let admin add movies
+* Music store
 
+* Firebase with movies (ran out of time, pretty doable)
+
+* Admin can delete movies
+
+### Bugs
+
+Getting weird flickering due to my crappy styling code. It's probably due to the lazy footer I made.
 
 ## Built With
 
