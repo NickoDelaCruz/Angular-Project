@@ -22,7 +22,7 @@ export class AddGameComponent implements OnInit {
     this.toggle = !this.toggle;
   }
 
-  addListing(owner: string, title: string, price: string, system: string, description: string) {
+  addGameListing(owner: string, title: string, price: string, system: string, description: string) {
     const newGame: Agame = new Agame(owner, title, price, system, description);
 
     this.gameService.addGame(newGame);

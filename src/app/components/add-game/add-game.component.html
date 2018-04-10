@@ -14,7 +14,7 @@
         <input type="text" name="System" placeholder='PS4, XBOX, Wii, PC' #system>
     <label for="Description">Description : </label>
         <input type="text" id="desc" name="Description" placeholder='Describe what your selling (Imgur links are accepted)' #description>
-        <button  class="btn btn-info" name="Add a Property"(click)="addListing(owner.value,title.value,price.value,system.value,description.value); owner.value = ''; title.value = ''; price.value = ''; system.value = ''; description.value = '';">Sell Game</button>
+        <button  class="btn btn-info" name="Add a Property"(click)="addGameListing(owner.value,title.value,price.value,system.value,description.value); owner.value = ''; title.value = ''; price.value = ''; system.value = ''; description.value = '';">Sell Game</button>
         <button type="button" class="btn btn-danger ml-2" name="Close" (click)="toggleDisplay()">Cancel</button>
   </form>
   </div>
