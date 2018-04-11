@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 import { GameService } from '../../game.service';
-import { Agame } from '../../game.model';
+
 import { UserComment } from '../../comment.model';
+
+import { Agame } from '../../game.model';
 
 
 @Component({
@@ -28,9 +30,17 @@ export class AddGameComponent implements OnInit {
   addGameListing(owner: string, title: string, price: string, system: string, description: string) {
     const newGame: Agame = new Agame(owner, title, price, system, description);
     const newComment: UserComment = new UserComment("");
-    newGame.comments = [newComment];
+    // newGame.comments = [newComment];
     this.gameService.addGame(newGame);
     this.toggleDisplay();
   }
+
+//   addGameListing(owner: string, title: string, price: string, system: string, description: string) {
+//   const newGame: Agame = new Agame(owner, title, price, system, description);
+//   const newComment: UserComment = new UserComment("");
+//   newGame.comments = [newComment];
+//   this.gameservice.addGame(newGame);
+//   this.toggleDisplay();
+// }
 
 }

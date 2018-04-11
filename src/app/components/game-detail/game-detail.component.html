@@ -16,14 +16,14 @@
 <h1> Description <h1>
 <h2>{{gameDetail?.description}}</h2>
 <form>
-                  <label for="com">Comment: </label>
-                    <input type="text" name="com" placeholder='comment' #com>
-                      <button type="button" class="btn btn-info" name="Add Comment"(click)="addComment(com.value); com.value = '';">Submit</button>
+<label for="com">Comment: </label>
+<input type="text" name="com" placeholder='comment' #com>
+<button type="button" class="btn btn-info" name="Add Comment"(click)="addComment(com.value); com.value = '';">Submit</button>
 
-              </form>
+</form>
 
-              <div class="container">
-                <div *ngFor="let comment of gameDetail?.comments">
-                    <h5>{{comment.com}}</h5>
-                </div>
-              </div>
+<div class="container">
+<div *ngFor="let comment of gameDetail?.comments">
+<h5>{{comment.com}}</h5>
+</div>
+</div>

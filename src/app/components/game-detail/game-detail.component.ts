@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
+
+
 import { GameService } from '../../game.service';
 import { UserComment } from '../../comment.model';
 
@@ -23,7 +25,7 @@ export class GameDetailComponent implements OnInit {
       this.gameKey = urlParameters['id'];
     });
     this.gameService.getGameByKey(this.gameKey).subscribe(dataLastEmittedFromObserver => {
-       this.gameDetail = dataLastEmittedFromObserver;);
+       this.gameDetail = dataLastEmittedFromObserver;});
       }
 
       addComment(com: string) {
