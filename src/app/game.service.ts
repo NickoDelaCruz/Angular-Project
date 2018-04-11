@@ -28,6 +28,12 @@ export class GameService {
   this.database.object(`/games/${gameId}`).remove();
 }
 
+updateComments(updatedGame) {
+  let postEntryInFirebase = this.getGameByKey(updatedGame.$key);
+  postEntryInFirebase.update({ comments: updatedGame.comments, })
+
+}
+
 
 
 }

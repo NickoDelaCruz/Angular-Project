@@ -14,7 +14,9 @@ import { AppComponent } from './app.component';
 import { MovieComponent } from './components/movie/movie.component';
 
 
-// Store
+// Comments
+import { AddCommentComponent } from './components/add-comment/add-comment.component';
+import { CommentListComponent } from './components/comment-list/comment-list.component';
 
 
 // Game Crazy
@@ -51,7 +53,9 @@ export const firebaseConfig = {
     RemoveGameComponent,
     AddGameComponent,
     GameDetailComponent,
-    AdminComponent
+    AdminComponent,
+    CommentListComponent,
+    AddCommentComponent
   ],
   imports: [
     BrowserModule,

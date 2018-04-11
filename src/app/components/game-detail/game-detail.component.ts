@@ -1,7 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+
 import { GameService } from '../../game.service';
+import { UserComment } from '../../comment.model';
 
 @Component({
   selector: 'app-game-detail',
@@ -20,7 +22,14 @@ export class GameDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters)=> {
       this.gameKey = urlParameters['id'];
     });
-    this.gameDetail = this.gameService.getGameByKey(this.gameKey);
-  }
+    this.gameService.getGameByKey(this.gameKey).subscribe(dataLastEmittedFromObserver => {
+       this.gameDetail = dataLastEmittedFromObserver;);
+      }
 
+      addComment(com: string) {
+      const newComment: UserComment = new UserComment(com);
+      this.gameDetail.comments.push(newComment);
+      this.gameService.updateComments(this.gameDetail);
+      // this.toggleDisplay();
+    }
 }

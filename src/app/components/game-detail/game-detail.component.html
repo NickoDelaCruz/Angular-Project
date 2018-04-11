@@ -1,17 +1,29 @@
-<h1>Owner: {{(gameDetail | async)?.owner}}</h1>
+<h1>Owner: {{gameDetail?.owner}}</h1>
 
 <br>
 
-<h1>Game Title: {{(gameDetail | async)?.title}} </h1>
+<h1>Game Title: {{gameDetail?.title}} </h1>
 
 <br>
 
-<h1>Game System : {{(gameDetail | async)?.system}} </h1>
+<h1>Game System : {{gameDetail?.system}} </h1>
 
 <br>
 
-<h1>Asking for: ${{(gameDetail | async)?.price}}</h1>
+<h1>Asking for: ${{gameDetail?.price}}</h1>
 
 <br>
 <h1> Description <h1>
-<h2>{{(gameDetail | async)?.description}}</h2>
+<h2>{{gameDetail?.description}}</h2>
+<form>
+                  <label for="com">Comment: </label>
+                    <input type="text" name="com" placeholder='comment' #com>
+                      <button type="button" class="btn btn-info" name="Add Comment"(click)="addComment(com.value); com.value = '';">Submit</button>
+
+              </form>
+
+              <div class="container">
+                <div *ngFor="let comment of gameDetail?.comments">
+                    <h5>{{comment.com}}</h5>
+                </div>
+              </div>
